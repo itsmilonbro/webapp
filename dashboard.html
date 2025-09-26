@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🖥️ Dashboard -User | Freelance Milon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <header class="bg-blue-700 text-white p-4 flex justify-between">
+    <div>Welcome, <span id="userName"></span></div>
+    <div>Expires: <span id="expiryDate"></span></div>
+  </header>
+
+  <marquee class="bg-yellow-100 text-black p-2">📢 Important updates will appear here</marquee>
+
+  <div class="flex flex-col md:flex-row">
+    <nav class="w-full md:w-64 bg-gray-800 text-white p-4">
+      <ul class="space-y-2">
+        <li><a href="pages/tool1.html" target="toolFrame" class="block hover:underline">Tool 1</a></li>
+        <li><a href="pages/tool2.html" target="toolFrame" class="block hover:underline">Tool 2</a></li>
+      </ul>
+    </nav>
+    <iframe name="toolFrame" class="flex-1 h-screen border-none"></iframe>
+  </div>
+
+  <footer class="bg-gray-900 text-white py-6 px-4">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
+      <div class="mb-4 md:mb-0 text-center md:text-left">
+        © 2025 <strong>Freelance Milon</strong>. All rights reserved.
+      </div>
+      <div class="flex space-x-4 justify-center md:justify-end">
+        <a href="policy.html" class="hover:underline text-gray-300">Privacy Policy</a>
+        <a href="disclaimer.html" class="hover:underline text-gray-300">Disclaimer</a>
+        <a href="payment.html" class="hover:underline text-gray-300">Payment Info</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
