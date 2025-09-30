@@ -87,6 +87,10 @@ function closeEditModal() {
   document.getElementById('editModal').classList.add('hidden');
 }
 
+
+
+
+
 // View login history
 function viewHistory(index) {
   const user = users[index];
@@ -112,10 +116,13 @@ function viewHistory(index) {
 }
 
 // Close history modal
+//function closeHistoryModal() {
+ // document.getElementById('historyModal').classList.add('hidden');
+//}
 function closeHistoryModal() {
-  document.getElementById('historyModal').classList.add('hidden');
+  const modal = document.getElementById('historyModal');
+  modal.style.display = 'none';
 }
-
 // Search users
 function filterUsers() {
   const query = document.getElementById('searchInput').value.toLowerCase();
