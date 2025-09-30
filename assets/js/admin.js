@@ -72,7 +72,7 @@ function saveUserEdit() {
   const expiry = document.getElementById('editExpiry').value;
 
   if (!name || !phone || !password || !expiry) {
-    alert("All fields are required.");
+    alert("All fields are must required.");
     return;
   }
 
@@ -83,11 +83,15 @@ function saveUserEdit() {
 }
 
 // Close edit modal
+//function closeEditModal() {
+  //document.getElementById('editModal').classList.add('hidden');
+//}
+
 function closeEditModal() {
-  document.getElementById('editModal').classList.add('hidden');
+  const modal = document.getElementById('editModal');
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
 }
-
-
 
 
 
