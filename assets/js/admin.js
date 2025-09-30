@@ -54,6 +54,16 @@ function deleteUser(index) {
 }
 
 // Edit user
+//function editUser(index) {
+ // const user = users[index];
+ // editIndex = index;
+ // document.getElementById('editName').value = user.name;
+//  document.getElementById('editPhone').value = user.phone;
+ // document.getElementById('editPassword').value = user.password;
+ // document.getElementById('editExpiry').value = user.expiry;
+  //document.getElementById('editModal').classList.remove('hidden');
+// }
+
 function editUser(index) {
   const user = users[index];
   editIndex = index;
@@ -61,7 +71,10 @@ function editUser(index) {
   document.getElementById('editPhone').value = user.phone;
   document.getElementById('editPassword').value = user.password;
   document.getElementById('editExpiry').value = user.expiry;
-  document.getElementById('editModal').classList.remove('hidden');
+
+  const modal = document.getElementById('editModal');
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
 }
 
 // Save edited user
