@@ -102,7 +102,8 @@ function saveUserEdit() {
 
 function closeEditModal() {
   const modal = document.getElementById('editModal');
-  modal.classList.add('hidden');
+ // modal.classList.add('hidden');
+   modal.style.display = 'none';
   modal.classList.remove('flex');
 }
 
