@@ -3,14 +3,28 @@
     "name": "Milon- Admin JSON",
     "phone": "01955255066",
     "password": "12345",
-    "expiry": "2025-12-31",
+    "expiry": "2026-12-31",
     "loginHistory": ["2025-09-30T14:00:00"]
   },
   {
     "name": "Admin 2",
     "phone": "01950025533",
     "password": "12345",
-    "expiry": "2025-10-15",
+    "expiry": "2026-10-15",
+    "loginHistory": ["2025-09-29T18:30:00"]
+  } ,
+  {
+    "name": "Admin 2 Check",
+    "phone": "0",
+    "password": "0",
+    "expiry": "2026-10-15",
+    "loginHistory": ["2025-09-29T18:30:00"]
+  } ,
+  {
+    "name": "Admin 3 Check Exp",
+    "phone": "1",
+    "password": "1",
+    "expiry": "2024-10-15",
     "loginHistory": ["2025-09-29T18:30:00"]
   }
 ]
